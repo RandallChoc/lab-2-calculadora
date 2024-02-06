@@ -1,0 +1,31 @@
+ int n1=82;
+ int n2=21;
+ int resultado;
+ char operacion= '+'; //Cambia a '-' si deseas la resta
+ 
+void setup () {
+  size (900,600);
+  } 
+  
+void draw () {
+  background(#22C6ED);
+  fill (#C16D06);
+  strokeWeight (3);
+  rect(156,98,600,400);
+  fill(255);
+  rect(207,149,500,300);
+  
+  //Realizar la operación
+  if (operacion == '+') {
+    resultado = n1+n2;
+  } else if (operacion == '-') {
+    resultado = n1-n2;
+ }
+  
+    // Mostrar el resultado en la pantalla
+    textAlign (CENTER, CENTER);
+    textSize(90);
+    fill(0); //color de texto
+    text(n1 + " " + operacion + " " + n2 + " = " + resultado, width / 2, height / 2);
+
+}  
